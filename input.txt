@@ -1,0 +1,29 @@
+registerDoc Curious Cardiologist
+markDocAvail 1 09:30-10:30
+markDocAvail 1 09:30-10:00 12:30-13:00 16:00-16:30
+registerDoc Dreadful Dermatologist
+markDocAvail 2 09:30-10:00 12:30-13:00 16:00-16:30
+showAvailByspeciality Cardiologist Time
+registerPatient PatientA
+bookAppointment 1 1 12:30
+showAvailByspeciality Cardiologist Rating
+registerPatient PatientB
+registerPatient PatientC
+registerPatient PatientD
+registerPatient PatientE
+registerPatient PatientF
+cancelBookingId 1
+showAvailByspeciality Cardiologist Time
+bookAppointment 2 1 12:30
+registerDoc Daring Dermatologist
+markDocAvail 3 11:30-12:00 14:00-14:30
+showAvailByspeciality Dermatologist Time
+bookAppointment 6 3 11:30
+bookAppointment 1 1 12:30
+bookAppointment 6 1 09:30
+bookAppointment 3 1 16:00
+showAvailByspeciality Cardiologist Rating
+bookAppointment 4 1 16:00 true
+cancelBookingId 3
+showAppointmentsBooked PatientF Patient
+showAppointmentsBooked Curious Doctor
